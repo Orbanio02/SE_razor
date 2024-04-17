@@ -1,0 +1,136 @@
+/* Reset styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SF Pro Display Bold', sans-serif;
+}
+
+/* Define font-faces (assuming you have proper font files) */
+@font-face {
+  font-family: 'SF Pro Display Bold';
+  src: url('path/to/SFProDisplay-Bold.eot');
+  /* Define all font formats here */
+}
+
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  src: url('path/to/SFProDisplay-Regular.eot');
+  /* Define all font formats here */
+}
+
+/* Page body */
+.body {
+  max-width: 1300px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+/* Header and navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#menu-button {
+  display: block;
+}
+
+/* Your existing CSS... */
+
+/* Move the menu to the right side */
+#menu {
+  justify-content: flex-end;
+}
+
+/* Style the menu items (if needed) */
+#menu ul {
+  /* Add styles for the <ul> element here */
+}
+
+#menu li {
+  /* Add styles for the <li> elements here */
+}
+
+
+/* Hero section */
+#hero {
+  position: relative;
+  text-align: center;
+}
+
+/* Your existing CSS... */
+
+/* Center-align the h1 text on mobile (e.g., iPhone 12 Pro) */
+.text-9xl {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  /* Left-align the h1 text on desktop screens */
+  .text-9xl {
+    text-align: left;
+  }
+}
+
+.bn1, .bn2 {
+  background-color: lightgrey;
+  border-radius: 11px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.b1 {
+  margin: 0 20px;
+}
+
+.img1 {
+  /* Add your styles for the hero-right image */
+}
+
+.bn1 {
+  /* Add your styles for the first button */
+}
+
+.bn2 {
+  /* Add your styles for the second button */
+}
+
+.par {
+  /* Add your styles for the paragraph */
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 75px;
+  }
+
+  .bn1 {
+    /* Update styles for the first button on mobile */
+  }
+
+  .bn2 {
+    /* Update styles for the second button on mobile */
+  }
+
+  .par {
+    text-align: center;
+    /* Update styles for the paragraph on mobile */
+  }
+
+  .img1 {
+    /* Update styles for the hero-right image on mobile */
+  }
+
+  #menu {
+    /* Update styles for the navigation menu on mobile */
+  }
+}
